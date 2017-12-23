@@ -1,0 +1,14 @@
+hr#last_line
+{
+	color:	#a09e9d;
+}
+
+div#last_line_txt
+{
+	margin-top:	-3px;
+}
+
+div.round_corner_tl
+{
+	display: none;
+}

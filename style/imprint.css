@@ -1,0 +1,52 @@
+div.imprint_bmg
+{
+	font-size:	11pt;
+	line-height:	140%;
+	color:	#252525;
+
+	padding:	0px	80px	0px	50px;
+	float:	left;
+}
+
+div.imprint_dev
+{
+	font-size:	11pt;
+	line-height:	140%;
+	color:	#252525;
+
+	padding-left:	90px;
+	margin-left:	90px;
+}
+
+div.imprint_bmg	a,	div.imprint_dev	a
+{
+	color:	#252525;
+	text-decoration:	none;
+}
+
+div.imprint_bmg	a:hover,	div.imprint_dev	a:hover
+{
+	color:	#000;
+	text-decoration:	underline;
+}
+
+div.imprint_liability
+{
+	font-size:	9pt;
+	line-height:	140%;
+	color:	#252525;
+	clear:	left;
+}
+
+div.imprint_awards
+{
+	font-size:	11pt;
+	line-height:	140%;
+	color:	#252525;
+	clear:	left;
+}
+
+div.imprint_awards	a
+{
+	padding-right:	20px;
+}

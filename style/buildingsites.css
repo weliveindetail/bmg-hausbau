@@ -1,0 +1,96 @@
+
+div.card
+{
+	width:	100%;
+	clear:	both;
+	vertical-align:	middle;
+
+	background:	#f3f1f0	url('../gfx/card_bkgnd_br.png')	bottom	right	no-repeat;
+}
+
+div.card:hover
+{
+	background-color:	#e3eaf7;
+}
+
+div.card	.round_corner_tl
+{
+	position:	absolute;
+	width:	26px;
+	height:	26px;
+	float:	left;
+
+	background:	url('../gfx/card_bkgnd_tl.png');
+}
+
+div.card	img
+{
+	width:	150px;
+	float:	left;
+	margin-right:	20px;
+}
+
+div.card	.text
+{
+	margin:	0px	20px;
+	padding:	8px	0px;
+	overflow:	hidden;
+}
+
+div.card	span.location
+{
+	font-size:	11pt;
+	color:	#151515;
+}
+
+div.card	p
+{
+	padding-top:	3px;
+	font-size:	10pt;
+	margin:	0px;
+}
+
+div.card	a
+{
+	color:	#151515;
+	text-decoration:	none;
+}
+
+div.card	a:hover
+{
+	color:	#151515;
+	text-decoration:	none;
+}
+
+div.card	.footer
+{
+	clear:	both;
+}
+
+div.picture
+{
+	width:	100%;
+	text-align:	center;
+}
+
+div.picture	p.subtext
+{
+	font-size:	9pt;
+	color:	#353535;
+	text-align:	center;
+	margin:	0px;
+}
+
+span.h1bold
+{
+	font-size:	18pt;
+	font-weight:	bold;
+	color:	#151515;
+}
+
+span.h1
+{
+	font-size:	18pt;
+	color:	#151515;
+}
+

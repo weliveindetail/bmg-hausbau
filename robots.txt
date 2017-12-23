@@ -1,0 +1,4 @@
+# robots.txt zu bmg-hausbau.de
+
+User-agent: *
+Disallow:
