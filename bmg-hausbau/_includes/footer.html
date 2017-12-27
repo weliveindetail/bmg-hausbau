@@ -1,0 +1,43 @@
+<footer class="site-footer">
+  <div id="kontakt" class="wrapper">
+    <div class="footer-col-wrapper" style="margin-left: 0px;">
+      <div class="footer-col footer-col-1" style="padding-left: 15pt;">
+        Baumanagement Mathias Gränitz<br>
+        Wittgensdorfer Weg 4<br>
+        09244 Lichtenau<br>
+        <br>
+        Tel.: <a href="tel:+491608576884">(0)160 85 76 88 4</a><br>
+        E-Mail: <a href="click:the.address.will.be.decrypted.by.javascript" id="MailAddress_footer" onclick='openMailer(this);'></a>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <!--<p>{{ site.description | escape }}</p>-->
+        &nbsp;
+      </div>
+    </div>
+  </div>
+
+  <script language="JavaScript" type="text/javascript">
+    function decode(a, shift) {
+      return a.replace(/[a-zA-Z]/g, function(c){
+        return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + shift) ? c : c - 26);
+      })
+    };
+    function encode(a, shift) {
+      return a.replace(/[a-zA-Z]/g, function(c){
+        return String.fromCharCode((c >= "a" ? 97 : 65) <= (c = c.charCodeAt(0) - shift) ? c : c + 26);
+      })
+    };
+    function decodeAddress() {
+      return decode("tenravgm-onh", 13) + "@" + decode("pvg.mn", 17);
+    }
+    function openMailer(element) {
+      element.setAttribute("href", "mailto:" + decodeAddress());
+      element.setAttribute("onclick", "");
+    };
+
+    var addr = decodeAddress();
+    $("#MailAddress_header").html(addr);
+    $("#MailAddress_footer").html(addr);
+  </script>
+</footer>
