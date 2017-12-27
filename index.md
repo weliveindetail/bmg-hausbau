@@ -26,7 +26,7 @@ layout: home
   <h2>Referenzen</h2>
 
   <div style="margin: 0 auto;">
-    <img src="img/slide/03.jpg" style="width: 80vmin; height: auto;" />
+    <img src="img/ref/03.jpg" style="width: 80vmin; height: auto;" />
   </div>
 </div>
 
