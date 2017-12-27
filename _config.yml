@@ -16,8 +16,9 @@
 title: BMG-Hausbau
 email: graenitz-bau@gmx.de
 description: > # this means to ignore newlines until "baseurl:"
-  Lorem ipsum
-baseurl: "/bmg-hausbau/bmg-hausbau"
+  Preisbewusstes Bauen durch Direktbeauftragung – ohne Vorauszahlungen, sicherer Baufortschritt.
+  Kostenlose Erstberatung interessierter Bauherrn.
+baseurl: "/bmg-hausbau"
 url: "http://weliveindetail.github.io"
 
 # Build settings
