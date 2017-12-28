@@ -157,39 +157,6 @@ pre {
 
 
 /**
- * Wrapper
- */
-.wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  @extend %clearfix;
-
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-  }
-}
-
-
-
-/**
- * Clearfix
- */
-%clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
-/**
  * Icons
  */
 .icon > svg {
@@ -201,14 +168,14 @@ pre {
   }
 }
 
-.social-media-list {
-  .icon {
-    padding-right: 5px;
-  }
 
-  li + li {
-    padding-top: 5px;
-  }
+/**
+ * Clearfix
+ */
+%clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
@@ -230,6 +197,10 @@ pre {
   background: #e2e0dc;
 }
 
+.carousel-item {
+  margin: 0pt 10pt;
+}
+
 .site-header {
   background: #ffffffcc;
 }
@@ -246,8 +217,8 @@ pre {
   padding: 0px !important;
 }
 
-.wrapper {
-  max-width: 100%;
-  padding: 0px;
-  margin: 0px;
+.footer-custom-wrapper {
+  font-size: 15px;
+  color: #828282;
+  margin: 0pt 20pt;
 }
