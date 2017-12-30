@@ -179,8 +179,6 @@ pre {
 }
 
 
-
-
 .page0 {
   background-image: url("../img/bkgnd/01.jpg");
   background-position: 80% 40%;
@@ -188,9 +186,11 @@ pre {
 }
 
 .page1 {
+  background-color: #f1f1f1;
   background-image: url("../img/bkgnd/02.jpg");
-  background-position: 20% 80%;
-  background-size: 100% auto;
+  background-position: 100% 50%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
 }
 
 .page2 {
@@ -199,6 +199,11 @@ pre {
 
 .carousel-item {
   margin: 0pt 10pt;
+}
+
+.carousel-item img {
+  width: auto;
+  height: 120pt;
 }
 
 .site-header {
@@ -217,8 +222,17 @@ pre {
   padding: 0px !important;
 }
 
+.leistungen-paragraph {
+  margin: 20pt 0pt;
+  max-width: 600px;
+}
+
 .footer-custom-wrapper {
   font-size: 15px;
   color: #828282;
   margin: 0pt 20pt;
+}
+
+.slick-dots {
+  margin-top: 5pt;
 }

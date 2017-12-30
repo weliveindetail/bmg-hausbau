@@ -61,17 +61,17 @@ layout: default
       </header>
 
       <div style="position: absolute; bottom: 0pt; color: #222;">
-        <div style="margin: 10pt 0pt; text-shadow: 2px 0px #cccccc; font-size: 8vmin;">
+        <div style="margin: 50px 0px 0px 0px; text-shadow: 2px 0px #cccccc; font-size: 2em;">
           <span style="background: #ffffffaa; padding: 5pt 15pt 5pt 10pt;">
             Wir bauen
           </span>
         </div>
-        <div style="margin: 10pt 0pt; text-shadow: 2px 0px #cccccc; font-size: 8vmin;">
+        <div style="margin: 7px 0px 0px 0px; text-shadow: 2px 0px #cccccc; font-size: 2em;">
           <span style="background: #ffffffaa; padding: 5pt 15pt 5pt 10pt;">
             Ihr Zuhause
           </span>
         </div>
-        <div style="margin-top: 10pt; margin-bottom: 0pt; background: #ffffffaa; padding: 10pt 15pt 10pt 10pt; font-size: 3.5vmin;">
+        <div style="margin: 5px 0px 0px 0px; background: #ffffffaa; padding: 10pt 15pt 10pt 10pt; font-size: 1.1em;">
           Tel.: <a href="tel:+491608576884">(0)160 85 76 88 4</a><br>
           E-Mail: <a href="click:the.address.will.be.decrypted.by.javascript"
                      id="MailAddress_header" onclick='openMailer(this);'></a><br>
@@ -81,26 +81,24 @@ layout: default
     </div>
 
     <div class="home">
-      <div id="leistungen" class="page1" style="font-size: 3.5vmin; padding: 20pt;">
-        <h2>Leistungen</h2>
+      <div id="leistungen" class="page1" style="padding: 20pt;">
+        <h2 style="font-size: 2em;">Leistungen</h2>
 
-        <div style="padding-right: 20%;">
-          <div>
-            Wenn Sie den Neubau eines Ein- oder Zweifamilienhauses in Betracht ziehen, sind Sie hier genau richtig. Ich begleite Sie gern bei der Realisierung Ihres Traumes von den eigenen vier Wänden.
-          </div>
-          <br>
-          <div>
+        <div style="font-size: 1.1em;">
+          <p class="leistungen-paragraph">
+            Wenn Sie den Neubau eines Ein- oder Zweifamilienhauses in Betracht ziehen, sind Sie hier genau richtig. Ich begleite Sie gern bei der Realisierung Ihres Traumes von den eigenen vier Wänden. Die Schaffung von Wohneigentum verbessert Ihre Lebensqualität nachhaltig und bringt Sicherheit für die ganze Familie.
+          </p>
+          <p class="leistungen-paragraph">
+            Besonders wichtig bei der Durchführung Ihrer Baumaßnahme ist Ihre aktive Mitwirkung und Mitgestaltung. Gewöhnlich entstehen die meisten Fragen erst mit Beginn der Realisierung.
+          </p>
+          <p class="leistungen-paragraph">
             Profitieren Sie von meinen in über 20 jähriger aktiver Bautätigkeit erworbenen Fähigkeiten. Ich stehe privaten Bauherrn und gewerblichen Auftraggebern gleichermaßen zur Verfügung.
-          </div>
-          <br>
-          <div>
-            Besonders wichtig bei der Durchführung Ihrer Baumaßnahme ist Ihre aktive Mitwirkung und Mitgestaltung. Gewöhnlich entstehen die meisten Fragen wenn der Bau einmal läuft.
-          </div>
+          </p>
         </div>
       </div>
 
-      <div id="referenzen" class="page2" style="font-size: 3.5vmin; padding: 20pt;">
-        <h2>Referenzen</h2>
+      <div id="referenzen" class="page2" style="padding: 20pt;">
+        <h2 style="font-size: 2em;">Referenzen</h2>
 
         <div style="padding: 10pt 25px 20pt 25px;">
           <div id="carousel" style="margin: 0 auto;">
@@ -145,16 +143,10 @@ layout: default
         element.setAttribute("onclick", "");
       };
 
-      function layout() {
-        var pageHome = $("#home");
-        var pageLeistungen = $("#leistungen");
-
-        pageHome.css("top", 0);
-        pageHome.css("height", window.innerHeight);
-
-        var screenRatio = window.innerWidth / window.innerHeight;
-        pageHome.css("background-size", (screenRatio > 4 / 3) ? "100% auto" : "auto 100%");
-        pageLeistungen.css("background-size", (screenRatio > 11 / 8) ? "100% auto" : "auto 100%");
+      function layoutBkgnd() {
+        var home = $("#home");
+        var ratio = home.width() / home.height();
+        $("#home").css("background-size", (ratio > 4/3) ? "100% auto" : "auto 100%");
       }
 
       $(window).ready(function() {
@@ -162,7 +154,11 @@ layout: default
         $("#MailAddress_header").html(addr);
         $("#MailAddress_footer").html(addr);
 
-        layout();
+        var pageHome = $("#home");
+        pageHome.css("top", 0);
+        pageHome.css("height", window.innerHeight);
+
+        layoutBkgnd();
 
         $("#carousel").slick({
           dots: true,
@@ -175,7 +171,7 @@ layout: default
       });
 
       $(window).resize(function() {
-        layout();
+        layoutBkgnd();
       });
     </script>
   </footer>
