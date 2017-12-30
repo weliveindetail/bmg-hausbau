@@ -102,10 +102,14 @@ layout: default
 
         <div style="padding: 10pt 25px 20pt 25px;">
           <div id="carousel" style="margin: 0 auto;">
-            <div class="carousel-item"><img src="img/ref/01.jpg" /></div>
-            <div class="carousel-item"><img src="img/ref/02.jpg" /></div>
-            <div class="carousel-item"><img src="img/ref/03.jpg" /></div>
-            <div class="carousel-item"><img src="img/ref/04.jpg" /></div>
+            <div class="carousel-item"><img src="{{ "img/slide/thumb01.jpg" | relative_url }}" /></div>
+            <div class="carousel-item"><img src="{{ "img/slide/thumb02.jpg" | relative_url }}" /></div>
+            <div class="carousel-item"><img src="{{ "img/slide/thumb03.jpg" | relative_url }}" /></div>
+            <div class="carousel-item"><img src="{{ "img/slide/thumb04.jpg" | relative_url }}" /></div>
+            <div class="carousel-item"><img src="{{ "img/slide/thumb05.jpg" | relative_url }}" /></div>
+            <div class="carousel-item"><img src="{{ "img/slide/thumb06.jpg" | relative_url }}" /></div>
+            <div class="carousel-item"><img src="{{ "img/slide/thumb07.jpg" | relative_url }}" /></div>
+            <div class="carousel-item"><img src="{{ "img/slide/thumb08.jpg" | relative_url }}" /></div>
           </div>
         </div>
       </div>
